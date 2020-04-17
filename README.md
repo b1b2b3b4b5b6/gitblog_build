@@ -1,6 +1,6 @@
 #### 简介
 gitblog的docker build项目
-在dockerxman/docker-gitblog的Dockerfile基础进行了修改，取消blog文件夹的卷共享，改成由宿主机选择直接mount网站根目录。
+在dockerxman/docker-gitblog的Dockerfile基础上进行了修改，取消blog文件夹的卷共享，改成由宿主机选择直接mount网站根目录。
 
 #### docker-compose配置
 
