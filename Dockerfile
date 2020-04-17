@@ -54,9 +54,6 @@ ADD supervisor_nginx.conf /etc/supervisor/conf.d/supervisor_nginx.conf
 ADD supervisor_php-fpm.conf /etc/supervisor/conf.d/supervisor_php-fpm.conf
 ADD www.conf /etc/php5/fpm/pool.d/www.conf
 
-
-VOLUME ["/www/gitblog-master/blog"]
-
 EXPOSE 80
 
 ENTRYPOINT ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
